@@ -1,0 +1,43 @@
+@import "../../mixin";
+.featured {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .featuredItem {
+    flex: 1;
+    margin: 0px 20px;
+    padding: 30px;
+    border-radius: 10px;
+    @include boxShadow;
+    .featuredTitle {
+      font-size: 20px;
+    }
+    .featuredMoneyContainer {
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      .featuredMoney {
+        font-size: 30px;
+        font-weight: 600;
+      }
+      .featuredMoneyRate {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        .featuredIcon {
+          font-size: 14px;
+          margin-left: 5px;
+          color: rgb(26, 184, 26);
+          &.negative {
+            color: red;
+          }
+        }
+      }
+    }
+    .featuredSub {
+      font-size: 15px;
+      color: gray;
+    }
+  }
+}
